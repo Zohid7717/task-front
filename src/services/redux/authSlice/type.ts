@@ -3,7 +3,7 @@ export type UserType = {
   email: string | null,
   password: string | null,
   name: string | null,
-  role: "admin" | "user" | null,
+  role: string,
   avatar: string | null
 }
 

@@ -6,15 +6,15 @@ const createSliceWithThinks = buildCreateSlice({
 })
 
 type productStateType = {
-  products: ProductType[] | null,
-  isLoading: boolean | null,
-  message: string | null
+  products: ProductType[],
+  isLoading: boolean,
+  message: string
 }
 
 const initialState: productStateType = {
-  products: null,
+  products: [],
   isLoading: false,
-  message: null
+  message: ''
 }
 
 const productSlice = createSliceWithThinks({

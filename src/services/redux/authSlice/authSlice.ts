@@ -8,18 +8,18 @@ const createSliceWithThinks = buildCreateSlice({
 
 type authStateType = {
   user: UserType | null,
-  role: string | null,
+  role: string,
   isLoading: boolean,
   token: string | null,
-  message: string | null
+  message: string
 }
 
 const initialState: authStateType = {
   user: null,
-  role: null,
+  role: '',
   isLoading: false,
   token: null,
-  message: null
+  message: ''
 }
 
 const authSlice = createSliceWithThinks({
@@ -29,9 +29,9 @@ const authSlice = createSliceWithThinks({
     logOut: create.reducer((state) => {
       state.user = null
       state.isLoading = false
-      state.role = null
+      state.role = ''
       state.token = null
-      state.message = null
+      state.message = ''
       window.localStorage.removeItem('token')
     }),
     getMe: create.asyncThunk<UserType>(

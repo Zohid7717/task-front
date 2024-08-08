@@ -81,12 +81,12 @@ const AddProduct: FC = () => {
           </label>
 
           <select {...register('categoryId')}>
-            {
-              categories?.map((value: any, i: number) => (
+            {categories.length > 0 ? (
+              categories.map((value: any, i: number) => (
                 <option key={i} value={value.id}>
                   {value.name}
                 </option>
-              ))
+              ))) : <p>Not category found</p>
             }
           </select>
           <label>
