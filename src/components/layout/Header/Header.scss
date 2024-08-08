@@ -1,0 +1,23 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  background-color: #1B1D31;
+  & nav{
+    display: flex;
+    gap: 20px;
+    & a{
+      font-size: 25px;
+    }
+    .active{
+      text-decoration:underline;
+    }
+  }
+  & a{
+    color: #fff;
+    & img{
+      height: 40px;
+    }
+  }
+}

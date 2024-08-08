@@ -1,0 +1,43 @@
+.home{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-grow: 1;
+  &__sidebar{
+    max-width: 300px;
+    background-color: #1B1D31;
+    width: 100%;
+    padding: 10px;
+    & h3{
+      font-size: 25px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+  }
+  &__categories{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    & button{
+      background-color: transparent;
+      color: wheat;
+      font-size: 18px;
+    }
+  }
+}
+
+.cards{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-content: start;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: fit-content;
+  padding: 20px;
+}
+.active-btn{
+  text-decoration: underline;
+}
