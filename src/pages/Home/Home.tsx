@@ -47,7 +47,7 @@ const Home: FC = () => {
       {products.length > 0 ? (
         products.map((product, i) => (
           <ProductCard key={i} images={product.images} title={product.title} price={product.price} id={product.id} />
-        ))) : <p>Not product found</p>
+        ))) : <p>Not products found</p>
       }
     </div>
   </div>

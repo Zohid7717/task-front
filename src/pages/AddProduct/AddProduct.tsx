@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 const AddProduct: FC = () => {
   const [inputValue, setInputValue] = useState<string>('')
   const [values, setValues] = useState<string[]>([])
-  const [categories, setCategories] = useState<any>(null)
+  const [categories, setCategories] = useState<any>([])
   const navigate = useNavigate()
   const {
     register,
