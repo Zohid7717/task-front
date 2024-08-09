@@ -11,7 +11,7 @@ type PropsType = {
 
 const ProductCard: FC<PropsType> = ({ id, title, price, images }) => {
   return <div className='product-card'>
-    <Link to={`/${id}`}>
+    <Link to={`product/${id}`}>
       <div className="product-card__img">
         <img src={images[0]} alt="card-img" />
       </div>

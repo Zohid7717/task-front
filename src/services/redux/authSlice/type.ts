@@ -1,10 +1,10 @@
 export type UserType = {
-  id: number | null,
-  email: string | null,
-  password: string | null,
-  name: string | null,
+  id: number ,
+  email: string,
+  password: string,
+  name: string,
   role: string,
-  avatar: string | null
+  avatar: string
 }
 
 export type LogInResType = {

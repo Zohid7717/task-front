@@ -59,6 +59,7 @@ const authSlice = createSliceWithThinks({
       fulfilled: (state, action) => {
         state.isLoading = false
         state.role = action.payload.role
+        state.user = action.payload
       },
       rejected: (state, action) => {
         state.isLoading = false

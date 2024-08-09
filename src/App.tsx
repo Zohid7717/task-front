@@ -3,7 +3,7 @@ import './App.scss'
 import MainLayout from './components/layout/MainLayout/MainLayout'
 import { Suspense } from 'react'
 import Home from './pages/Home/Home'
-import AddProduct from './pages/AddProduct/AddProduct'
+import AddProduct from './pages/Dashboard/Dashboard'
 import Login from './pages/Login/Login'
 import SingleProduct from './pages/SingleProduct/SingleProduct'
 import EditProduct from './pages/EditProduct/EditProduct'
@@ -17,7 +17,7 @@ const router = createBrowserRouter(createRoutesFromElements(
         <Home />
       </Suspense>
     } />
-    <Route path='add-product' element={
+    <Route path='dashboard' element={
       <Suspense fallback={
         <p>Loading...</p>
       }>
@@ -38,7 +38,7 @@ const router = createBrowserRouter(createRoutesFromElements(
         <EditProduct/>
       </Suspense>
     } />
-    <Route path='/:id' element={
+    <Route path='product/:id' element={
       <Suspense fallback={
         <p>Loading...</p>
       }>
